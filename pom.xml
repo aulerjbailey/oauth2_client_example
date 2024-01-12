@@ -10,12 +10,12 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>mx.bbva</groupId>
+    <groupId>oauth2.client.example</groupId>
     <artifactId>bbva_site</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>site</name>
-    <description>bbva_site</description>
+    <description>oauth2_client_example</description>
 
     <properties>
         <java.version>20</java.version>
