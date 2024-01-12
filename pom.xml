@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>oauth2.client.example</groupId>
-    <artifactId>bbva_site</artifactId>
+    <artifactId>oauth2_client_example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>site</name>
+    <name>oauth2</name>
     <description>oauth2_client_example</description>
 
     <properties>
