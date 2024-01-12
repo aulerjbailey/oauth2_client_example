@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="../../css/score.css">
+
+<div class="vertical-align" ng-init="ctrlScoreCollaborator.init()">
+
+    <div class="text-center" style="margin-top: 50px;">
+        <h1 id="question-label-survey">¿Cómo fue la calidad de la atención de {{ collaborator.name }}?</h1>
+    </div>
+
+    <div class="text-center">
+        <img ng-click="ctrlScoreCollaborator.selectScore($event, 3);" class="icon_image" id="icon_love" src="../../img/emogis/love.png" alt="" width="250" />
+        <img ng-click="ctrlScoreCollaborator.selectScore($event, 2);" class="icon_image" id="icon_neutral" src="../../img/emogis/neutral.png" alt="" width="250" />
+        <img ng-click="ctrlScoreCollaborator.selectScore($event, 1);" class="icon_image" id="icon_angry" src="../../img/emogis/angry.png" alt="" width="250" />
+    </div>
+
+    <div id="content-show-questions">
+        <div class="text-center" style="margin: 20px 0;">
+            <h2>¿Qué recomendarías para mejorar la atención?</h2>
+        </div>
+
+        <div class="content">
+            <form>
+                <input id="calidad" type="radio" name="question" value="Calidad" checked ng-click="ctrlScoreCollaborator.hideInput($event);">
+                <label for="calidad"><span></span>Calidad</label>
+
+                <input id="tiempo" type="radio" name="question" value="Tiempo" ng-click="ctrlScoreCollaborator.hideInput($event);">
+                <label for="tiempo"><span></span>Tiempo</label>
+
+                <input id="documentación" type="radio" name="question" value="Documentación" ng-click="ctrlScoreCollaborator.hideInput($event);">
+                <label for="documentación"><span></span>Documentación</label>
+
+                <input id="otro" type="radio" name="question" value="Otro" ng-click="ctrlScoreCollaborator.showInput($event);">
+                <label for="otro"><span></span>Otro motivo</label>
+
+                <textarea style="margin-top: 20px;" onkeyup="" id="description" rows="5" placeholder="Descripción" class="form-control"></textarea>
+
+                <div class="worm">
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                    <div class="worm__segment"></div>
+                </div>
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="content-button" class="text-center" style="margin: 20px 0;">
+        <button ng-click="ctrlScoreCollaborator.validateScore();" type="button" class="btn btn-sm btn-success btn-bbva">ENVIAR</button>
+    </div>
+
+</div>
+
+

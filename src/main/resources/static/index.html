@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SITE | BBVA México</title>
+
+    <!-- icon
+    <link rel="icon" type="image/png" href="img/favicon.ico"> -->
+
+    <!-- main plugins -->
+    <link rel="stylesheet" href="./plugins/bootstrap/bootstrap-5.0.2.min.css">
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./plugins/datatables/datatables_1.13.4.min.css">
+
+    <!-- modifications
+    <link rel="stylesheet" href="./css/notify.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css"> -->
+  </head>
+
+  <body ng-app="routingApp">
+    <header>
+      <div class="header-area">
+        <div class="main-header">
+          <div class="header-bottom  header-sticky">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-2 col-md-1">
+                  <div class="logo">
+                    <!-- <a href="#"><img id="main-logo" src="img/LOGO_BBVA-CreandoOportunidades.png" alt="" width="200"></a> -->
+                  </div>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-8">
+                  <div class="main-menu f-right d-none d-lg-block">
+                    <nav>
+                      <ul id="navigation">
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">Accesos directos</a>
+                          <ul class="submenu">
+                            <li><a target="_blank" href="#">TX Dummies</a></li>
+                            <li><a target="_blank" href="#">Pases Especiales</a></li>
+                          </ul>
+                        </li>
+                        <li class="add-list"><a target="_blank" href="#"><span style="margin-right: 10px;" class="fas fa-building"></span>BARCH SITE</a></li>
+                        <li id="img-profile-label" class="login" title="">
+                          <a href="#">
+                            <!-- <img id="img-profile" style="border-radius: 50%;" src="img/ICON_unknown.png" width="35" /> -->
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="col-12">
+                  <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="text-center bar-area">
+      <strong id="bar-area">Banking Architecture</strong>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 15px;">
+
+      <!-- Content here -->
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10" ng-view></div>
+        <div class="col-lg-1"></div>
+      </div>
+
+
+    </div>
+
+    <!-- <?!= include('app/module/component/modals') ?> -->
+
+    <footer>
+      <div class="footer-area">
+        <div class="container">
+
+          <div class="footer-top footer-padding">
+            <div id="footer" class="row justify-content-between">
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="single-footer-caption mb-30">
+                    <!-- logo -->
+                    <div class="footer-logo">
+                      <!-- <a href="#"><img id="main-logo-footer" src="img/LOGO_BBVA-color.png" title="" width="200"></a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Menú principal</h4>
+                    <ul>
+                      <li><a target="_blank" href="#">BArch Site</a></li>
+                      <li><a href="#">Documentación</a></li>
+                      <li><a href="#">Acerca de</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>¿Necesitas ayuda?</h4>
+                    <label style="color: #8ba4b1;">
+                      Si estás utilizando la Plataforma y necesitas asistencia, favor de leer la documentación citada a continuación: <a href="#" style="color: #2dcccd;"><strong>Documentación</strong></a>.
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>¿Bugs?</h4>
+                    <label style="color: #8ba4b1;">
+                      La Plataforma se encuentra en constante crecimiento. Si deseas reportar Bugs, favor de enviar mensaje directo a <strong style="color: #2dcccd;">___</strong>.
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-xl-12 col-lg-12 text-center">
+                <div style="margin-bottom: 10px;">
+                  <!-- <a href="#"><img id="logo-sec-arch-gov" src="img/LOGO_Sec-ArchGov-color.png" title="" width="100"></a> -->
+                </div>
+                <div class="footer-copy-right">
+                  <p>
+                    <script>document.write(new Date().getFullYear());</script> &copy; <a href="#" target="_blank">BBVA</a>, S.A.<br>Developed by Banking Architecture: Security & Architecture Governance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- main pluggins -->
+    <script src="./plugins/bootstrap/popper-2.9.2.min.js"></script>
+    <script src="./plugins/bootstrap/bootstrap-5.0.2.min.js"></script>
+    <script src="./plugins/bootstrap/jquery-3.6.0.js"></script>
+    <script src="./plugins/datatables/datatables_1.13.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./plugins/moment/moment.js"></script>
+    <script src="./plugins/moment/moment-with-locales.js"></script>
+
+    <!-- angularjs -->
+    <script src="./plugins/angular/angular.js"></script>
+    <script src="./plugins/angular/angular-route.js"></script>
+    <script src="./plugins/angular/angular-locale_es-es.js"></script>
+
+    <!-- modifications
+    <script src="./js/bootstrap-notify.js"></script>
+    <script src="./js/notify.js"></script> -->
+    <script src="./js/onload.js"></script>
+
+    <!-- main functions -->
+    <script src="./js/app.js"></script>
+    <script src="./dashboardController.js"></script>
+    <script src="./view/login/loginController.js"></script>
+    <script src="./view/scoreCollaborator/scoreCollaboratorController.js"></script>
+    <script src="./view/scoreCollaborator/shareSurveyController.js"></script>
+
+  </body>
+</html>
