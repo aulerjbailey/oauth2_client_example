@@ -1,4 +1,4 @@
-package mx.bbva.bbva_site;
+package oauth2.client.example;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
